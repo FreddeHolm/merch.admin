@@ -1,0 +1,198 @@
+{
+
+"collect": {
+    "Pick up in Linköping": "Hämta i Linköping",
+    "Your basket": "Din kundvagn",
+    "items": "varor",
+    "Your basket is empty": "Din kundvagn är tom",
+    "Continue shopping": "Fortsätt handla",
+    "Total": "Summa",
+    "You must shop for at least 100 kr for pickup": "Du måste handla för minst 100 kr för avhämtning",
+    "Explore the range": "Utforska sortimentet",
+    "Select date": "Välj datum",
+    "You can select a maximum of 4 times.": "Du kan maximalt välja 4 tider.",
+    "You have selected the maximum number of times (4). Remove a time to select a new one.": "Du har valt maximalt antal tider (4). Ta bort en tid för att välja en ny.",
+    "Select time for": "Välj tid för",
+    "whenever": "när som",
+    "Selected times": "Valda tider",
+    "Remove": "Ta bort",
+    "Hämta i Linköping": "Hämta i Linköping",
+    
+    "TermsText": "Lägg till de produkter du vill ha i varukorgen, välj datum och tider som passar att hämta och skicka in beställningen. Vi återkommer via epost för att bekräfta dag och tid, detta görs oftast inom 24 timmar. Ordern hämtas på campus Valla (HusEtt, precis bakom A-huset LiU). Du slipper betala frakt. Betalning sker via Swish (eller kort om du ej har Swish) när du hämtar produkterna. Har du några frågor, maila info@studentshoppen.com",
+    "Meddelande": "Meddelande",
+    "Kontakta Oss": "Kontakt Info",
+    "collectlocation": "Hämta ordern här:",
+    "termsheader": "Beställningsinfo"
+
+
+  },
+
+
+
+"universal": {
+    "imärke": "| Märke",
+    "currency": " kr",
+    "Inga betyg än": "Inga betyg än"
+},
+
+
+"navbar": {
+    "Studentlivet": "Studentlivet",
+    "Förbeställ märken": "Förbeställ Märken",
+    "Skapa Märken": "Skapa Märken",
+    "Alla Produkter": "Alla Produkter",
+    "Alla Ovvar": "Alla Ovvar",
+    "Admin": "Admin",
+    "Karta": "Karta",
+    "Märken": "Märken",
+    "Bästsäljande": "Bästsäljande",
+    "Bra Att Ha": "Bra Att Ha",
+    "Till Festen": "Till Festen",
+    "Till Ovven": "Till Ovven",
+    "Nyheter": "Nyheter"
+
+},
+
+
+"cart": {
+    "Din kundvagn": "Din kundvagn",
+    "Kundvagn": "Kundvagn",
+    "varor": "varor",
+    "Din kundvagn är tom": "Din kundvagn är tom",
+    "Fortsätt handla": "Fortsätt handla",
+    "Summa": "Summa", 
+    "Jag bor i": "Jag bor i:",
+    "Sverige": "Sverige",
+    "Finland": "Finland",
+    "other": "Övrigt",
+    "Till betalning": "Till betalning",
+    "Hämta i Linköping": "Hämta i Linköping"
+},
+
+"footer": {
+    "Köpvilkor": "Köpvilkor",
+    "Hem": "Hem",
+    "Om oss": "Om oss",
+    "Produkttest": "Produkttest",
+    "Integritetspolicy": "Integritetspolicy", 
+    "Studentlivet": "Studentlivet",
+    "Rättigheter": "Alla Rättigheter Reserverade©"
+},
+"layout": {
+    "pagetitle": "Premium tygmärken och ovveprylar"
+ 
+},
+"product": {
+    "tillfälligtSlut": "Tillfälligt slut",
+    "expectedRestockDate": "I lager ca: {{date}}",
+    "buttonTillfälligtSlut": "Tillfälligt slut",
+    "buttonVarianter": "Varianter",
+    "buttonLägg till": "Lägg till",
+    "tillbaka i lager": "Tillbaka i Lager!",
+    "tagFå kvar": "Få kvar!",
+    "tagNyhet": "Nyhet!",
+    "tagtenfor": "10 för 300kr",
+    "textfrån": "Från:",
+    "buttonLägg till": "Lägg till",
+    "buttonVarianter": "Varianter"
+
+},
+"mainpage": {
+    "Nyheter": "Nyheter",
+    "Bästsäljande": "Bästsäljande",
+    "Till Ovven": "Till Ovven",
+    "Märken": "Märken",
+    "Till Festen": "Till Festen",
+    "Bra att ha": "Bra att ha"
+
+},
+"release": {
+    "loading": "Läser in…",
+    "Formuläret stänger": "Formuläret stänger: ",
+    "Formulär för": "Formulär för "
+
+},
+"filters":{
+    "Sök produkter": "Sök produkter",
+    "Bästsäljande Produkter": "Bästsäljande Produkter"
+},
+"Skapamärken":{
+    "Skapa dina egna märken": "Skapa dina egna märken",
+    "Ladda mer": "Ladda mer",
+    "ourpatches": "Några av våra designer",
+
+    "Dimensions": "Mått:",
+    "Typ": "Typ:",
+    "märke": "märke",
+    "edge": "Kant:",
+
+    "Broderat": "Broderat",
+    "Vävt": "Vävt",
+    "Tryckt": "Tryckt",
+    "Tunn": "Tunn",
+    "Vanlig": "Vanlig",
+
+    "Namn": "Namn",
+    "Email": "Email",
+    "Telefon": "Telefon",
+    "Antal Märken": "Antal Märken",
+    "Mått": "Mått (höjd x bredd i cm)",
+    "Märkestyp": "Märkestyp (vävt, broderat etc)",
+    "howtohelp": "Hur kan vi hjälpa dig?"
+},
+"success":{
+    "Fortsätt handla": "Fortsätt handla",
+    "tackorder": "Tack för din order!",
+    "KollaEpost": "Kolla din e-post inkorg för kvittot.",
+    "omfrågor": "Om du har några frågor, kontakta oss gärna på vår Instagram eller email:",
+    "Följ vår Instagram": "Följ vår Instagram ",
+    "erbjudanden": " för erbjudanden och nya märkesdesigner!",
+
+    "IngetKvitto": "Kvittot kommer när vi kontaktar dig.",
+
+    "ViKontaktarDig": "Vi återkommer normalt inom 24 timmar med mer information om när vi kan mötas upp så håll koll på din epost."
+
+},
+
+
+
+"termsofpurchase":{
+    "Köpvilkor": "Köpvilkor"
+    
+},
+"productslug":{
+    "Bild": "Bild",
+
+    "Alla recensioner": "Alla recensioner",
+    "Endast med text": "Endast med text",
+    "Köp 10" :"Köp 10 valfria märken för 300kr",
+    "Varianter": "Varianter:",
+    "Antal": "Antal:",
+    "Från": "Från",
+    "LäggKundvagn": "Lägg till i kundvagn",
+    "Köp nu": "Köp nu",
+    "Produktdetaljer": "Produktdetaljer:",
+    "AndraPopulära":"Andra populära produkter",
+    "Betygsätt":"Betygsätt produkten:",
+    "TackRecension": "Tack för att du recenserade produkten, det kan ta ett tag innan din recension visas.",
+    "ErrorRecension": "Error: Det gick ej att skicka formuläret, vänligen försök igen.",
+    "skickades ej":"Formuläret skickades ej, se till att fylla i alla obligatoriska fält.",
+    "Skickar":"Skickar...",
+    "Ålder": "Ålder",
+    "Rubrik": "Rubrik",
+    "Recension": "Recension",
+    "Betyg": "Betyg:",
+    "Skicka": "Skicka",
+    "RecensionAndra": "Recensioner från andra:",
+    "Anonym": "Anonym",
+    "år":" år",
+    "Visa mer": "Visa mer",
+    "Mer Recensioner": "Mer Recensioner"
+
+}
+
+
+
+
+
+}

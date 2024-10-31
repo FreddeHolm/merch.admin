@@ -1,0 +1,55 @@
+Folder PATH listing
+Volume serial number is B031-2832
+C:.
+¦   about.js
+¦   admin.js
+¦   Ads.txt
+¦   error.js
+¦   index.js
+¦   pay.js
+¦   privacy-policy.js
+¦   release.js
+¦   search.js
+¦   skapamarken.js
+¦   success.js
+¦   terms-of-purchase.js
+¦   test.js
+¦   tree_structure.txt
+¦   tree_structure2.txt
+¦   _app.js
+¦   
++---api
+¦       direct-pay-stripe.js
+¦       hello.js
+¦       sanitymirroringsl.js
+¦       stripe.js
+¦       stripefi.js
+¦       stripeother.js
+¦       
++---filter
+¦       [slug].js
+¦       
++---product
+¦       ratingprofilepic.png
+¦       ratingprofilepic.psd
+¦       [slug].js
+¦       
++---studentlivet
+¦   ¦   allaovvar.js
+¦   ¦   index.js
+¦   ¦   
+¦   +---admin
+¦   ¦       index.js
+¦   ¦       
+¦   +---[cityname]
+¦       ¦   index.js
+¦       ¦   
+¦       +---[view]
+¦           ¦   index.js
+¦           ¦   
+¦           +---[slug]
+¦                   index.js
+¦                   
++---test
+        [slug].js
+        

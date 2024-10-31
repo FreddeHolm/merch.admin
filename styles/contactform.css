@@ -1,0 +1,381 @@
+.floatleft{
+  float: left;
+}
+
+.a25, .a25text{
+  width: 20%; /* 25 eller 33.33% */
+  float: left;
+}
+.a25{
+  width: 33.33%; /* 25 eller 33.33% */
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  justify-content: center;
+}
+
+.a50{
+  width: 50%; /* 25 eller 33.33% */
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.centerradio3{
+
+  width: 12.5%; /* 25 eller 33.33% */
+  float: left;
+
+
+}
+
+.form-field-radio {
+  position: relative;
+  margin: 32px 0;
+}
+
+
+
+.center{
+justify-content: center;
+}
+.requiredbutton, .requiredbutton:hover{
+  text-decoration: none;
+  color: #282828;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.bigwidth{
+  width: 100%;
+  position: relative;
+}
+
+.get-in-touch {
+  max-width: 1000px;
+  margin: 50px auto 70px auto;
+  position: relative;
+
+}
+.get-in-touch .title {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3.2em;
+  line-height: 48px;
+  padding-bottom: 48px;
+     color: var(--primarycolor);
+    background: var(--primarycolor);
+    background: -moz-linear-gradient(left,var(--primarycolor) 0%,var(--primarycolor)  100%) !important; /* #e0ce2a Alt gulfärg #dfdc30 */
+    background: -webkit-linear-gradient(left,var(--primarycolor) 0%,var(--primarycolor)  100%) !important;
+    background: linear-gradient(to right,var(--primarycolor) 0%,var(--primarycolor)  100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.title-alt2 {
+  text-align: center;
+  
+  padding-bottom: 48px;
+
+ 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    cursor: pointer;
+
+}
+
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0; /* bottom margin */
+}
+
+.form-field-submit {
+  position: relative;
+  margin: 32px 0px 0px 0px;
+}
+
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: var(-primarycolor);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: #f0f0f000;
+  color: var(--secondarycolor);
+
+}
+
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+
+.noresize-textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+input:not(:placeholder-shown) + .label, /* placholder behövs på inputs för att det ska funka https://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css-on-a-page-i-am-visiting-and-do-no */
+.contact-form .input-text:focus + .label,
+.contact-form .input-text:not(:empty) + .label {
+  top: 0px; /*Makes it so labels are top of textarea */
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+.label,.radiolabel{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--primarycolor);
+  cursor: text;
+}
+.label{
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, 
+  -webkit-transform .2s ease-in-out;
+}
+
+
+.contact-form .label{
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+}
+
+.radiolabel{
+  position: relative;
+  left: 8px;
+  bottom: 50%;
+} 
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+   background-image: linear-gradient(125deg, var(--primarycolor), var(--primarycolor));  /*Alt gulfärg #dfdc30 */
+  color: #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+.contact-form .submit-btn:hover {
+   background-image: linear-gradient(125deg, var(--primarycolorshade), var(--primarycolor));  /*Alt gulfärg #dfdc30 */
+}
+
+
+.submit-btn{ /* Transiton out*/
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: all 300ms linear;
+  border-radius: 4px;
+ 
+
+}
+.submit-btn:hover { /* Transiton in*/
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 300ms linear;
+}
+
+.mobile-contact-align-center{
+  margin-top: 30px;
+}
+
+.contact-form{
+width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 991px) { /* gör att knapparna centreras*/
+  
+  .contact-form{
+    width: 80%;
+    margin: auto;
+
+  }
+  
+  /* Om man vill centrera Submit och recaptcha*/
+  
+  .mobile-contact-align-center{
+      text-align: center;
+  }
+    /**/
+
+}
+
+
+.customlabel{
+  top: 0px;
+}
+
+
+@media screen and (max-width: 991px) { /* gör att knapparna centreras*/
+  .a25text{
+    width: 33.33%;
+    float: left;
+  }
+  .a25 {
+    width: 33.33%;
+    float: left;
+    text-align: center; /* I LOVE YOU text-align: center;*/
+  }
+  .form-field-radio {
+    position: relative;
+    margin: 32px 0;
+  }
+
+}
+
+
+
+@media screen and (max-width: 380px) { /* gör att knapparna centreras*/
+  
+  .recaptcha {
+    width: 100%;
+  
+  border-radius: 4px;
+  border-right: 1px solid #d8d8d8;
+  overflow: hidden;
+  }
+
+  }
+
+
+
+
+
+  .content {
+    border: 3px solid rgb(128, 123, 123);
+    padding: 15px 20px 10px 20px;
+    border-radius: 1em;
+
+
+    width: 30%; /* 25 eller 33.33% */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 1.66%;
+    margin-right: 1.66%;
+    float: left;
+    justify-content: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+@media screen and (max-width: 800px) { /* gör att knapparna centreras*/
+  
+    .content{
+      width: 100%;
+      padding: 8px 20px 5px 20px;
+      margin-bottom: 10px;
+
+  
+    }
+}
+
+
+.content:hover {
+    cursor: pointer;
+
+}
+    
+.content-parent {
+    height: 0px;
+    transition: all ease 0.9s;
+
+}
+    
+.collapstop{
+    border-bottom: 1px solid rgb(128, 123, 123);
+    padding-bottom: 20px;
+    transition: all ease-in-out 0.6s;
+
+}
+
+
+
+.content-show {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+
+    /*height: 200px; /* */
+    transition: all ease 1.2s;
+}
+
+.floatright{
+    float: right;   
+}
+
+
+
+
+@media screen and (min-width: 992px) { /* gör att knapparna centreras*/
+  .row {
+    display: flex;
+    width: 100%;
+    margin-top: 15px; /* Add appropriate margin */
+  
+  }
+
+}
+
+@media screen and (max-width: 991px) { /* gör att knapparna centreras*/
+  .row {
+
+    margin-bottom: 15px; /* Add appropriate margin */
+  
+  }
+
+}
+
+.uploadcare--widget__button {
+  background-color: var(--primarycolor);
+  color: white;
+  cursor: "pointer";
+}
+.uploadcare--widget__button:hover,
+.uploadcare--widget__button:active  {
+  background-color: var(--primarycolorshade);
+  color: white;
+  cursor: "pointer";
+
+}
+
+
+.custom-column-contact{
+  flex: 1;
+    padding: 0 10px; /* Add padding for spacing between columns */
+
+  }
+
+/* Define different widths for different screen sizes 
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: calc(33.333% - 30px); 
+}*/
+
+.form-field {
+  
+  flex: 1;
+  margin: 0 10px; /* Add spacing between form fields */
+  box-sizing: border-box;
+}
+
