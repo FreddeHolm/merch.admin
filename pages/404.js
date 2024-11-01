@@ -7,7 +7,7 @@ const Custom404 = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push('/search');
+      router.push('/');
     }, 2000);
 
     return () => clearTimeout(timer); // Cleanup timeout on component unmount

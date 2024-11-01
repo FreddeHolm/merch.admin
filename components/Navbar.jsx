@@ -28,7 +28,6 @@ const Navbar = ({announcements = [], slug, release = [], productsss = [] }) => {
   const [isExpanded2, setIsExpanded2] = useState(false);
 
 
-/*enable todo*/
 
 
 const [scrolled, setScrolled] = useState(false);
@@ -144,6 +143,7 @@ const closeClickMenu = () => {
 
   return (
     <div>
+
       <div className="navbarTopPadding" ></div>
       <div style={{ top: "0", position: 'fixed', left: "0", width: '100%', zIndex: 1099, paddingTop: "62px" }}>
         {announcements.length > 0 && (
@@ -157,16 +157,16 @@ const closeClickMenu = () => {
           }}>
 
 
-          <div style={{ width: "30px", display: "flex", alignItems: "center" }} id="mobile" onClick={handleClick}>
-            <FontAwesomeIcon className="cart-icon" style={{ width: "100%" }} id="bar" icon={clicked ? faTimes : faBars} />
+          <div style={{ width: "30px", display: "flex", alignItems: "center" }} id="mobile" //onClick={handleClick}
+          >
+           {/* <FontAwesomeIcon className="cart-icon" style={{ width: "100%" }} id="bar" icon={clicked ? faTimes : faBars} /> */}
           </div>
           
           <p className="logo" style={{ cursor: "pointer" }}>
-            {/* working aspect ratio 365 : 86 - width 260, height 61.3= 62*/}
+            
             <Link href="/"> 
             
-            {screenWidth < 410 /*350 */ ? (  
-              //<div style={{ width: "10px", height: "65px" }} />
+            {screenWidth < 410 ? (  
               <img style={{ height: "62px", marginRight: "-40px" }} src="/assets/Studentshoppensmalllogo.png" alt="Company Logo" />
 
 
@@ -177,7 +177,6 @@ const closeClickMenu = () => {
             
 
 
-              {/*<img style={{ width: "200px" }} src="/assets/ovveshoppen_loggan_smaller.png" alt="Företags logga" />*/}
             </Link>
           </p>
 
@@ -187,7 +186,6 @@ const closeClickMenu = () => {
 
 
 
-{/* Dropdown language here */}
 
 
 <div  style={{position: "relative",}}>
@@ -206,40 +204,43 @@ const closeClickMenu = () => {
 
   }}
   //widthout dropdown
-  onClick={toggleLanguage} 
+  //onClick={toggleLanguage} 
   
   //with dropdown:   
   //onClick={toggleLanguageDropdown}
   >
-    <img 
+   {/*  <img 
       src={getFlagImageUrl(i18n.language)}
       alt="Selected Flag"
       style={{height: "100%"}}
     />
+*/} 
+
   </button>
  
   
   {languageDropdownVisible && (
-    <LanguageDropdown style={{zIndex: 20005}} selectedLanguage={i18n.language}  handleChangeLanguage={handleChangeLanguage} languageDropdownVisible={languageDropdownVisible} /*selectedLanguage={selectedLanguage} */ />
+    <LanguageDropdown style={{zIndex: 20005}} selectedLanguage={i18n.language}  handleChangeLanguage={handleChangeLanguage} languageDropdownVisible={languageDropdownVisible}  />
   )}
+    
 </div> 
-{/* enable todo */}
 
 
 
           <button type="button" className="search-icon" style={{ marginTop: "10px" }}>
-          <Link href="/search">
+         {/*  <Link href="/search">  
     
     
 
     <a>
-      <AiOutlineSearch />
+     <AiOutlineSearch /> 
     </a>
-  </Link>
+  </Link> */} 
           </button>
-          <button type="button" className="cart-icon" style={{ marginTop: "5px" }} onClick={() => setShowCart(true)}>
-            <AiOutlineShopping />
-            <span className="cart-item-qty">{totalQuantities}</span>
+          <button type="button" className="cart-icon" style={{ marginTop: "5px" }} //onClick={() => setShowCart(true)}
+            >
+           {/*  <AiOutlineShopping />
+            <span className="cart-item-qty">{totalQuantities}</span>*/} 
           </button>
         </div>
 
@@ -248,7 +249,6 @@ const closeClickMenu = () => {
       </div>
       
 
-      {/* Navigation bar links */}
       <div style={{zIndex: 1098,}} className={
       announcements.filter(announcement => announcement.showannouncement).length > 0
         ? `navbaridthing ${scrolled ? 'navbaridscrolled' : 'navbaridnotscrolled'}`
@@ -256,7 +256,7 @@ const closeClickMenu = () => {
     }>
 
         <ul id="navbarid1" className={clicked ? "navbar active navbaridthing" : "navbar navbaridthing"}
-        style={{maxHeight: '100vh', overflow: 'auto', paddingBottom: "150px" }}/* gör så att man kan scrolla i navbar*/>
+        style={{maxHeight: '100vh', overflow: 'auto', paddingBottom: "150px" }}>
            <li className="nav-item " style={{width: '100%',}}>
            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',  position: "relative", }}>
           <Link href="/studentlivet">
@@ -272,20 +272,7 @@ const closeClickMenu = () => {
                     <a className={`text-link-style ${router.pathname === '/studentlivet' ? 'active' : ''}`} onClick={closeClickMenu}> • {t("navbar.Karta")}</a>
                   </Link>
                 </li>
- {/* //todo: enable
 
-                <li style={{marginTop: "15px", marginBottom: "15px"}}> 
-                  <Link href="/studentlivet/allaovvar">
-                    <a className={`text-link-style ${router.pathname.startsWith('/studentlivet/allaovvar') ? 'active' : ''}`} onClick={closeClickMenu}>{t("navbar.Alla Ovvar")}</a>
-                  </Link>
-                </li>
-                <li style={{marginTop: "15px", marginBottom: "15px"}}> 
-                  <Link href="/studentlivet/admin">
-                    <a className={`text-link-style ${router.pathname.startsWith('/studentlivet/admin') ? 'active' : ''}`} onClick={closeClickMenu}>{t("navbar.Admin")}</a>
-                  </Link>
-                </li> 
-                
-                */}
               </ul>
             )}
           
@@ -303,15 +290,7 @@ const closeClickMenu = () => {
 
 
 
-{/* todo, enable create
-    <li className="nav-item " style={{width: '100%',}}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',  position: "relative", }}>
-          <Link href="/create">
-            <a className={`text-link-style ${router.pathname.startsWith('/create') ? 'active' : ''}`} onClick={closeClickMenu}>{t("navbar.Skapa")}</a>
-          </Link>
-          <FontAwesomeIcon icon={isExpanded2 ? faMinus : faPlus} onClick={toggleExpansion2} style={{position: "relative", right: "10px", cursor: 'pointer', marginTop: "4px", width: "20px", color: "var(--primarycolor)" }} />
-        </div>
-*/}
+
 {isExpanded2 && (
               <ul className="sub-menu" style={{ marginBottom: "-15px"}}>
                 <li style={{marginTop: "15px", marginBottom: "15px"}}>
@@ -326,37 +305,19 @@ const closeClickMenu = () => {
                   </Link>
                 </li>
               
-               {/* //todo: enable
-                <li style={{marginTop: "15px", marginBottom: "15px"}}> 
-                  <Link href="/studentlivet/admin">
-                    <a className={`text-link-style `} onClick={closeClickMenu}>• {t("navbar.Fickpluntor")}</a>
-                  </Link>
-                </li> 
-                
-  
-             */}
+             
               </ul>
             )}
-            {/* todo, enable create
-      </li>     */}
+            
 
 
-
-
-
-          {/*
-         {release?.length > 0 && release.filter(releaseItem => releaseItem.showform).length > 0 && (   /* only shows förbeställ märken link when a form is up */}
-         
-       
            <li className="nav-item">
             <Link href="/release">
               <a className={`text-link-style ${router.pathname === '/release' ? 'active' : ''}`}
                 onClick={closeClickMenu}>{t("navbar.Förbeställ märken")}</a>
             </Link>
           </li>
-         {/*   */}
 
-       {/*   )} {/*  */}
 
 
 
@@ -398,7 +359,9 @@ const closeClickMenu = () => {
           </li>
 
         </ul>
+        
       </div>
+      
 
     </div>
   );
@@ -408,23 +371,24 @@ const LanguageDropdown = ({ languageDropdownVisible, selectedLanguage, handleCha
 
   return (
   <div className="language-dropdown" style={{display: languageDropdownVisible ? 'flex' :"none", }}>
-    <div className="language-option" onClick={() => {/*selectLanguage('sv');*/ handleChangeLanguage('sv'); }}  style={{borderBottom:'1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: selectedLanguage === 'sv' ? 'var(--secondarycolor)' : "",
+    <div className="language-option" onClick={() => {handleChangeLanguage('sv'); }}  style={{borderBottom:'1px solid #ccc', display: 'flex', alignItems: 'center', backgroundColor: selectedLanguage === 'sv' ? 'var(--secondarycolor)' : "",
   borderTopLeftRadius: "8px", borderTopRightRadius: "8px",}}>
       <img src="/assets/languages/flags/svflag.jpg" alt="SV Flag" style={{height: "25px", border:'1px solid #ccc '}}/>
       <span style={{marginLeft: "10px", color: selectedLanguage === 'sv' ? 'white' : "black"}}>Sv</span>
     </div>
 
-    <div className="language-option" onClick={() => { /*selectLanguage('en');*/ handleChangeLanguage('en'); }} style={{ display: 'flex', alignItems: 'center', backgroundColor: selectedLanguage === 'en' ? 'var(--secondarycolor)' : "", 
+    <div className="language-option" onClick={() => {  handleChangeLanguage('en'); }} style={{ display: 'flex', alignItems: 'center', backgroundColor: selectedLanguage === 'en' ? 'var(--secondarycolor)' : "", 
     borderBottomLeftRadius: "8px", borderBottomRightRadius: "8px",}}>
       <img src="/assets/languages/flags/ukflag.jpg" alt="En Flag" style={{height: "25px", border:'1px solid #ccc '}}/>
       <span style={{marginLeft: "10px", color: selectedLanguage === 'en' ? 'white' : "black"}}>En</span>
     </div>
     
-   { /* <div className="language-option" onClick={() => selectLanguage('fi')} style={{ display: 'flex', alignItems: 'center', backgroundColor: i18n.language === 'fi' ? 'var(--secondarycolor)' : "", 
+   <div className="language-option" onClick={() => selectLanguage('fi')} style={{ display: 'flex', alignItems: 'center', backgroundColor: i18n.language === 'fi' ? 'var(--secondarycolor)' : "", 
     borderBottomLeftRadius: "8px", borderBottomRightRadius: "8px",}}>
       <img src="/assets/languages/flags/fiflag.jpg" alt="FI Flag" style={{height: "25px", border:'1px solid #ccc '}}/>
       <span style={{marginLeft: "10px", color: i18n.language === 'fi' ? 'white' : "black"}}>Fi</span>
-    </div> */}
+    </div> 
+
 
 
   </div>

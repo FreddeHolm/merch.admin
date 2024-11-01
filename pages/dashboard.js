@@ -15,6 +15,12 @@ import { useEffect, useState } from 'react';
 import PaymentDetails from '../components/Dashboard/DashPaymentDetails'; // Adjust the path
 import styles from '../styles/dash.module.css';
 import { formatTimestamp } from '../components/Dashboard/formatDate'; // Import the helper function
+import LogoutButton from '../components/LogoutButton'; // Import the HOC
+
+import withAuth from '../components/withAuth'; // Import the HOC
+
+import { auth } from '../components/firebase';
+import { getIdToken } from 'firebase/auth';
 
 const Dashboard = () => {
   const [payments, setPayments] = useState([]);
@@ -42,11 +48,14 @@ const Dashboard = () => {
     }
   };
 
-  if (loading) return <p>Loading payments...</p>;
+  if (loading) return <p>Loading payments...       <LogoutButton /> {/* Add logout functionality */}
+</p>;
 
   return (
     <div className={styles.container}>
       <h1>Payments Dashboard</h1>
+      <LogoutButton /> {/* Add logout functionality */}
+
       <table className={styles.table}>
         <thead>
           <tr>

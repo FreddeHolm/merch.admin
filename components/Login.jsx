@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { getAuth, sendEmailVerification, signInWithEmailAndPassword } from 'firebase/auth';
-import { useAuth } from './AuthContext'; // Import useAuth hook
+import { useAuth } from './studentlivetadmin/AuthContext'; // Import useAuth hook
 import { useRouter } from 'next/router';
-import StudentlivetNavigation from '../studentlivet/SLNavigation';
-import Register from './Register'; // Import the Register component
-import RegisterWithEmailLink from './RegisterWithEmailLink'; // Import the RegisterWithEmailLink component
-import ReVerifyAccount from './ReVerifyAccount';
+import StudentlivetNavigation from './studentlivet/SLNavigation';
+import Register from './studentlivetadmin/Register'; // Import the Register component
+import RegisterWithEmailLink from './studentlivetadmin/RegisterWithEmailLink'; // Import the RegisterWithEmailLink component
+import ReVerifyAccount from './studentlivetadmin/ReVerifyAccount';
 
 
-import ResetPassword from './ResetPassword'; // Import the ResetPassword component
+import ResetPassword from './studentlivetadmin/ResetPassword'; // Import the ResetPassword component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
